@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}JS - function arguments{% endblock %}
+
+{% block body_tag %}
+    <body style="background-color: #eee;">
+{% endblock %}
+
+{% block body %}
+    <div>
+        <h3 style="background-color: #fff; padding: 10px; border: 1px solid #aaa; border-radius: 5px;">
+            <code>dev-tools -> console -> a(%arguments%);</code>
+        </h3>
+    </div>
+    <script>
+        function a(){
+            arr = [];
+            for(i=0;i<arguments.length;i++){
+                console.log(arguments[i]);
+                arr[i] = arguments[i];
+            }
+
+            return arr;
+        }
+    </script>
+{% endblock %}
