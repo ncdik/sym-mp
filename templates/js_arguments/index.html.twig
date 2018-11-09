@@ -2,16 +2,29 @@
 
 {% block title %}JS - function arguments{% endblock %}
 
-{% block body_tag %}
-    <body style="background-color: #eee;">
+{% block stylesheets %}
+    <style>
+        body{
+            background-color: #eee;
+        }
+        h3{
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+    </style>
 {% endblock %}
 
 {% block body %}
     <div>
-        <h3 style="background-color: #fff; padding: 10px; border: 1px solid #aaa; border-radius: 5px;">
+        <h3>
             <code>dev-tools -> console -> a(%arguments%);</code>
         </h3>
     </div>
+{% endblock %}
+
+{% block javascripts %}
     <script>
         function a(){
             arr = [];

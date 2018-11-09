@@ -2,7 +2,7 @@
 
 {% block title %}CSS flex{% endblock %}
 
-{% block body %}
+{% block stylesheets %}
     <style>
         body {
             background-color: #eeeeee
@@ -22,7 +22,9 @@
             margin: 1px;
         }
     </style>
+{% endblock %}
 
+{% block body %}
     <section>
         {% for color in colors %}
             <div class="block" style="background-color: {{ color }}">
